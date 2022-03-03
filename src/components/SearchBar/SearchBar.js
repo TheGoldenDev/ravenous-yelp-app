@@ -57,7 +57,7 @@ class SearchBar extends React.Component {
 
   //If term and location are not empty pass the data to the searchYelp object
   handleSearch(event) {
-    if (this.state.term || this.state.location !== null) {
+    if (this.state.term || this.state.location !== undefined || null) {
       this.props.searchYelp(
         this.state.term,
         this.state.location,
