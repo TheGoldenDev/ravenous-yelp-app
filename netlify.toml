@@ -1,0 +1,6 @@
+
+[[redirects]]
+from = "/api/yelp/*"
+to = "https://api.yelp.com/v3/:splat"
+status = 200
+force = true

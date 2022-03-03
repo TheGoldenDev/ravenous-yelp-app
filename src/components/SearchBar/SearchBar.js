@@ -30,12 +30,12 @@ class SearchBar extends React.Component {
   //Updates the state of sortby to the option the user selects
   handleSortByChange(sortByOption, event) {
     this.setState({ sortBy: sortByOption });
+    event.preventDefault();
     this.props.searchYelp(
       this.state.term,
       this.state.location,
       this.state.sortBy
     );
-    event.preventDefault();
   }
 
   //Updates state and displays the term in the search based on the keys the user presses
@@ -58,12 +58,12 @@ class SearchBar extends React.Component {
   //If term and location are not empty pass the data to the searchYelp object
   handleSearch(event) {
     if (this.state.term || this.state.location !== undefined || null) {
+      event.preventDefault();
       this.props.searchYelp(
         this.state.term,
         this.state.location,
         this.state.sortBy
       );
-      event.preventDefault();
     }
   }
 
