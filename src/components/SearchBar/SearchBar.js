@@ -1,13 +1,13 @@
-import React from "react";
-import "./SearchBar.css";
+import React from 'react';
+import './SearchBar.css';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      term: "",
-      location: "",
-      sortBy: "best_match",
+      term: '',
+      location: '',
+      sortBy: 'best_match',
     };
     this.handleTermChange = this.handleTermChange.bind(this);
     this.handleLocationChange = this.handleLocationChange.bind(this);
@@ -16,17 +16,18 @@ class SearchBar extends React.Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
 
     this.sortByOptions = {
-      "Best Match": "best_match",
-      "Highest Rated": "rating",
-      "Most Reviewed": "review_count",
+      'Best Match': 'best_match',
+      'Highest Rated': 'rating',
+      'Most Reviewed': 'review_count',
     };
   }
 
   //Applies the css styling to the currently selected sorting method
   getSortByClass(sortByOption) {
-    return this.state.sortBy === sortByOption ? "active" : "";
+    return this.state.sortBy === sortByOption ? 'active' : '';
   }
 
+  //Updates the state of sortby to the option the user selects
   handleSortByChange(sortByOption, event) {
     this.setState({ sortBy: sortByOption });
     this.props.searchYelp(
@@ -37,20 +38,26 @@ class SearchBar extends React.Component {
     event.preventDefault();
   }
 
+  //Updates state and displays the term in the search based on the keys the user presses
   handleTermChange(event) {
     this.setState({ term: event.target.value });
   }
 
+  //Updates the location search field based on the keys the user presses
   handleLocationChange(event) {
     this.setState({ location: event.target.value });
   }
+
+  //Searches the term and location provided when a user presses the Enter key
   handleKeyPress(event) {
-    if (event.key === "Enter") {
+    if (event.key === 'Enter') {
       this.handleSearch(event);
     }
   }
+
+  //If term and location are not empty pass the data to the searchYelp object
   handleSearch(event) {
-    if (this.state.term || this.state.location !== undefined) {
+    if (this.state.term || this.state.location !== null) {
       this.props.searchYelp(
         this.state.term,
         this.state.location,
