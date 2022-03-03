@@ -1,7 +1,6 @@
-const API_SECRET = process.env.API_SECRET;
-
 const Yelp = {
   search(term, location, sortBy) {
+    const API_SECRET = process.env.API_SECRET;
     return fetch(
       `/api/yelp/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
       {
