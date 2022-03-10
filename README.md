@@ -31,7 +31,7 @@
     <a href="https://github.com/TheGoldenDev/ravenous-yelp-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/TheGoldenDev/ravenous-yelp-app">View Demo</a>
+    <a href="https://ravenous-yelp-c09825.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/TheGoldenDev/ravenous-yelp-app/issues">Report Bug</a>
     ·
