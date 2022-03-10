@@ -68,7 +68,7 @@
 
 ## About The Project
 
-[![Ravenous Screen Shot][product-screenshot]](https://ravenous-yelp-c09825.netlify.app/)
+[![Ravenous Screen Shot][screenshot]](https://ravenous-yelp-c09825.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -195,5 +195,5 @@ Project Link: [https://github.com/TheGoldenDev/ravenous-yelp-app](https://github
 [license-url]: https://github.com/TheGoldenDev/ravenous-yelp-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/spencer-wood-web-dev
-[product-screenshot]: screenshot.png
-[feature-screenshot]: feature-screenshot.png
+[product-screenshot]: public/screenshot.png
+[feature-screenshot]: public/feature-screenshot.png
