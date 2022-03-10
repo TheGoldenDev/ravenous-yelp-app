@@ -9,11 +9,11 @@ class Business extends React.Component {
   }
 
   //Changes the format of the phone number to be more readable.
-  formatPhoneNumber(phoneNumberString) {
-    const cleaned = ('' + phoneNumberString).replace(/\D/g, '');
-    const match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
-    if (match) {
-      return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+  formatPhoneNumber(phoneNumber) {
+    const regexNum = ('' + phoneNumber).replace(/^\+1/g, '');
+    const matched = regexNum.match(/^(\d{3})(\d{3})(\d{4})$/);
+    if (matched) {
+      return '(' + matched[1] + ') ' + matched[2] + '-' + matched[3];
     }
     return null;
   }
@@ -33,7 +33,7 @@ class Business extends React.Component {
             <p>{this.props.business.address}</p>
             <p>{this.props.business.city}</p>
             <p>{`${this.props.business.state} ${this.props.business.zipCode}`}</p>
-            <p>{formatPhoneNumber(this.props.business.phone)}</p>
+            <p>{this.formatPhoneNumber(this.props.business.phone)}</p>
           </div>
           <div className='Business-reviews'>
             <h3>{this.props.business.category.toUpperCase()}</h3>
