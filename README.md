@@ -195,5 +195,5 @@ Project Link: [https://github.com/TheGoldenDev/ravenous-yelp-app](https://github
 [license-url]: https://github.com/TheGoldenDev/ravenous-yelp-app/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/spencer-wood-web-dev
-[product-screenshot]: public/screenshot.png
-[feature-screenshot]: public/feature-screenshot.png
+[product-screenshot]: public/screenshot.jpg
+[feature-screenshot]: public/feature-screenshot.jpg
