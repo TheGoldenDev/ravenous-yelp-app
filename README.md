@@ -74,7 +74,7 @@
 
 ### Built With
 
-- [Node.js](https://nextjs.org/)
+- [Node.js](https://nodejs.org/)
 - [React.js](https://reactjs.org/)
 - [Yelp API](https://www.yelp.com/developers)
 
