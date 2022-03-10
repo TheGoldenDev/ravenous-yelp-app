@@ -14,7 +14,7 @@ class App extends React.Component {
     this.searchYelp = this.searchYelp.bind(this);
   }
 
-  //Provides the search method in the Yelp object with data and returns the search results
+  //Provides the search method in the Yelp object with data and returns the search results.
   searchYelp(term, location, sortBy) {
     Yelp.search(term, location, sortBy).then((businesses) => {
       this.setState({ businesses: businesses });
