@@ -61,7 +61,6 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -126,7 +125,7 @@ Use the Ravenous app to:
     Sort results by "best match", "highest rated", and "most reviews".
     </li>
     <li>
-    Read various details about businesses including name, rating, location, phone number, and review count.
+    Read businesses details including name, rating, location, and phone number.
     </li>
   </ul>
 
